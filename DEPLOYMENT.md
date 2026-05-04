@@ -2,6 +2,7 @@
 
 This guide covers different deployment options for your portfolio website.
 
+
 ## Option 1: Vercel (Recommended - Easiest)
 
 Vercel is the company behind Next.js and offers the best integration.
