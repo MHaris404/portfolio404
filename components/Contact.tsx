@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { personalInfo } from '@/data/portfolio-data';
 import { FaEnvelope, FaPhone, FaWhatsapp, FaPaperPlane } from 'react-icons/fa';
-import emailjs from 'emailjs-com';
+// emailjs-com is imported dynamically inside handleSubmit to avoid SSR crashes
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -64,6 +64,7 @@ const Contact = () => {
         to_email: personalInfo.email,
       };
 
+      const emailjs = (await import('emailjs-com')).default;
       await emailjs.send(serviceID, templateID, templateParams, userID);
 
       setStatus('success');
