@@ -112,7 +112,7 @@ const ALL_PROJECTS: Project[] = rawProjects.map((p: any) => ({
   title: p.name || 'Untitled Project',
   description: p.desc || '',
   image: p.image && p.image_format ? `/images/projects/${p.image}.${p.image_format}` : undefined,
-  tags: [...new Set<string>((p.tags || []).map((t: string) => t.toLowerCase()))],
+  tags: Array.from(new Set<string>((p.tags || []).map((t: string) => t.toLowerCase()))),
   category: p.category || 'other',
   subCategory: p.SubCategory,
   liveUrl: p.links?.view && !p.links.view.toLowerCase().includes("can't be viewed")
