@@ -61,7 +61,7 @@
   {
     "name": "Mern_Mono_Docker_Stages",
     "desc": "MERN Stact, Docker for both development and production environments",
-    "image": "nodejs_micro",
+    "image": "mern_docker",
     "image_format": "webp",
     "category": "web",
     "SubCategory": "fullstack_web",
@@ -82,8 +82,8 @@
   {
     "name": "Nodejs-Mono-to-Micro-Architecture",
     "desc": "Microservices-based architecture. Webhooks, RabbitMQ, Docker, CI/CD, RabbitMQ, Sentry",
-    "image": "nodejs_micro",
-    "image_format": "png",
+    "image": "mern_docker",
+    "image_format": "webp",
     "category": "backend",
     "SubCategory": "backend_microservices",
     "tags": [
@@ -125,7 +125,7 @@
   {
     "name": "Portfolio Website",
     "desc": "Personal portfolio website. Don't need much info about it, just scroll down. You're here already!",
-    "image": "portfolioimage",
+    "image": "favhand",
     "image_format": "png",
     "category": "web",
     "SubCategory": "frontend_only_web",

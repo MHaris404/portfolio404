@@ -50,34 +50,24 @@ const Contact = () => {
     }
 
     try {
-      // EmailJS configuration
-      // Replace these with your actual EmailJS credentials
-      const serviceID = 'YOUR_SERVICE_ID';
-      const templateID = 'YOUR_TEMPLATE_ID';
-      const userID = 'YOUR_USER_ID';
-
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        to_name: 'Muhammad Haris',
-        message: formData.message,
-        to_email: personalInfo.email,
-      };
-
-      const emailjs = (await import('emailjs-com')).default;
-      await emailjs.send(serviceID, templateID, templateParams, userID);
+      // Open native email client with form data pre-filled
+      const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      window.open(`mailto:${personalInfo.email}?subject=${subject}&body=${body}`, '_blank');
 
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setStatus('idle');
       }, 5000);
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('Error opening mail client:', error);
       setStatus('error');
-      setErrorMessage('Failed to send message. Please try emailing directly.');
+      setErrorMessage('Could not open email client. Please email directly.');
     }
   };
 
@@ -236,7 +226,7 @@ const Contact = () => {
                 {/* Status Messages */}
                 {status === 'success' && (
                   <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/30 text-green-500">
-                    ✓ Message sent successfully! I&apos;ll get back to you soon.
+                    ✓ Your email client has opened with your message pre-filled. Please send it from there!
                   </div>
                 )}
 
