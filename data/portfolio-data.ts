@@ -13,9 +13,9 @@ export const personalInfo = {
     origin: "Karachi, Pakistan"
   },
   bio: [
-    "A passionate Senior Software Engineer with around five years of experience in the dynamic world of software development. My journey has been driven by a relentless pursuit of excellence, a commitment to innovation, and a love for solving complex problems.",
-    "Explore this portfolio to discover a collection of projects showcasing my expertise in Mobile App development, database management, software testing, and more. Each project reflects my dedication to crafting efficient, user-centric, and forward-thinking solutions.",
-    "Whether you're here to admire my work, collaborate on exciting projects, or simply connect with a fellow tech enthusiast, I'm delighted to have you. Let's embark on this journey together and turn visionary ideas into reality."
+    "I'm a Senior Software Engineer based in Riyadh, Saudi Arabia, with full legal right to work. With over five years of experience, I specialize in building robust, scalable mobile and web applications using Kotlin, React Native, and AWS, where I focus on integrating complex backend systems and ensuring high-quality delivery across CI/CD pipelines.",
+    "I've delivered engineering excellence across healthcare, digital strategy, and e-commerce platforms — working with global teams from Australia to the British Virgin Islands. I work deeply within Agile/Scrum environments, leveraging DevOps practices and AI tools like Claude AI, Llama, and Qwen to accelerate development, improve code coverage, and deliver premium user experiences.",
+    "Explore this portfolio to discover a collection of projects showcasing my expertise in Mobile App development, cloud architecture, and modern full-stack solutions. Each project reflects my dedication to crafting efficient, user-centric, and forward-thinking solutions."
   ],
   social: {
     linkedin: "https://www.linkedin.com/in/mharis404/",
@@ -25,6 +25,71 @@ export const personalInfo = {
   },
   resumeLink: "https://drive.google.com/file/d/1CpPPr3Tzs_Jbt3E4KchotejcKHuKXVSA/view?usp=drive_link"
 };
+
+export const businessValue = [
+
+  {
+    title: "Reduced Technical Debt & Enhanced App Stability",
+    impact: "By implementing robust architectural patterns like MVVM and Clean Architecture, along with automated unit and UI testing, I minimize regression issues. At JAM Web Services, this focus on code quality reduced critical deployment failures by 30% within a year.",
+    icon: "Bug"
+  },
+  {
+    title: "Strategic Technical Leadership & Product Alignment",
+    impact: "I translate complex business requirements into scalable technical solutions. By engaging early in product design and sprint planning, I identify technical constraints before they become bottlenecks, ensuring high product velocity.",
+    icon: "Users"
+  },
+
+  {
+    title: "Cloud Scalability & Backend Optimization",
+    impact: "Using AWS and performance profiling, I've identified and resolved system bottlenecks—including critical memory leaks and database query failures—preventing outages for platforms serving thousands of concurrent users.",
+    icon: "Cloud"
+  },
+  {
+    title: "Optimized CI/CD Pipelines & Rapid Deployment",
+    impact: "I streamline development workflows by automating builds and parallelizing test execution in AWS and Azure DevOps. This has cut release cycle times by 40%, enabling teams to ship features in hours instead of days with full confidence.",
+    icon: "Rocket"
+  },
+  {
+    title: "Architected Scalable Infrastructure & Developer Tooling",
+    impact: "I've transformed fragmented codebases into modular, scalable systems. This includes setting up standardized CI/CD pipelines, documentation hubs, and real-time monitoring dashboards that provide leadership with full visibility.",
+    icon: "Server"
+  },
+  {
+    title: "Premium User Experience & UI/UX Excellence",
+    impact: "Beyond functional code, I prioritize performance and accessibility. I've introduced memory optimization and frame-rate audits that caught critical UX lag, directly improving user retention and app ratings.",
+    icon: "Smartphone"
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Danish Amjad",
+    role: "Lead Android Engineer | Jetpack Compose & Kotlin",
+    company: "Jetpack Compose & Kotlin",
+    content: "I had the pleasure of working with Haris on Android development projects, and his expertise and problem-solving skills stood out. He is a dedicated and efficient developer, always bringing innovative solutions to the table. His ability to tackle complex challenges with ease makes him a valuable asset to any team also a very humble person.",
+    date: "March 23, 2025",
+    image: "/testimonials/danish.jpg",
+    initials: "DA"
+  },
+  {
+    name: "David Anson",
+    role: "Director, Technology Leader",
+    company: "Digital Strategy, Direction, Implementation & Transformation",
+    content: "Harris was a highly skilled developer who was able to achieve world class solutions and app code that was fast, efficient and effective. I would recommend him highly for any app development roles.",
+    date: "January 31, 2025",
+    image: "/testimonials/david.jpg",
+    initials: "DA"
+  },
+  {
+    name: "Abdul Ahad",
+    role: "UK based SQA Engineer",
+    company: "Manual + Automation + AI Testing | CI/CD",
+    content: "Having worked with Muhammad Haris for a year, I must say he have outstanding mobile app development expertise. A true leader with exceptional interpersonal skills, He excels in guiding teams to success.",
+    date: "November 20, 2023",
+    image: "/testimonials/abdul.jpg",
+    initials: "AA"
+  }
+];
 
 export const education = [
   {
@@ -101,46 +166,19 @@ export const skills = [
   { name: "Kotlin", icon: "/skills/kotlin.png" },
   { name: "React Native", icon: "/skills/reactnative.png" },
   { name: "AWS", icon: "/skills/awssaa.png" },
-  { name: "Ms Azure", icon: "/skills/azure.png" },
-  { name: "Firebase", icon: "https://img.icons8.com/color/48/000000/firebase.png" },
   { name: "ASP .NET Web API", icon: "/skills/aspwebapi.jpg" },
   { name: "Node.js", icon: "/skills/node.png" },
-  { name: "XML", icon: "/skills/xml.jpg" },
   { name: "Kotlin Compose", icon: "/skills/compose.png" },
-  { name: "C#", icon: "/skills/csharp.png" },
   { name: "React.js", icon: "/skills/react.png" },
   { name: "Next.js", icon: "/skills/reactjs.png" },
-  { name: "Xamarin", icon: "/skills/xamarin.jpg" },
-  { name: "Flutter", icon: "/skills/flutter.jpg" },
-  { name: ".NET Framework", icon: "/skills/dot-net-core.png" },
   { name: "Docker", icon: "/skills/docker.png" },
-  { name: "Telerik", icon: "/skills/telerik.png" },
-  { name: "AntD", icon: "/skills/antd.png" },
-  { name: "Native Base", icon: "/skills/nativebase.jpg" },
-  { name: "React Native Paper", icon: "/skills/paper.jpg" },
-  { name: "Material UI", icon: "/skills/material.png" },
-  { name: "MySQL", icon: "https://img.icons8.com/color/48/000000/mysql-logo.png" },
   { name: "MsSQL", icon: "/skills/mssql.png" },
-  { name: "SQLite", icon: "/skills/sqlite.png" },
   { name: "Redux", icon: "/skills/redux.png" },
-  { name: "Zustand", icon: "/skills/zustand.png" },
-  { name: "AsyncStorage", icon: "/skills/async.png" },
-  { name: "MMKV", icon: "/skills/mmkv.png" },
-  { name: "Bloc", icon: "/skills/bloc.png" },
   { name: "Room", icon: "/skills/room.png" },
-  { name: "DataStore", icon: "/skills/datastore.png" },
   { name: "Supabase", icon: "/skills/supabase.png" },
   { name: "MongoDB", icon: "https://img.icons8.com/color/48/000000/mongodb.png" },
-  { name: "Bootstrap", icon: "https://img.icons8.com/color/48/000000/bootstrap.png" },
-  { name: "Sass", icon: "https://img.icons8.com/color/48/000000/sass.png" },
-  { name: "HTML5", icon: "https://img.icons8.com/color/48/000000/html-5--v1.png" },
-  { name: "CSS3", icon: "https://img.icons8.com/color/48/000000/css3.png" },
   { name: "JavaScript", icon: "https://img.icons8.com/color/48/000000/javascript--v1.png" },
-  { name: "C++", icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" },
-  { name: "jQuery", icon: "https://img.icons8.com/ios-filled/48/1169ae/jquery.png" },
   { name: "GitHub", icon: "https://img.icons8.com/glyph-neue/48/ffffff/github.png" },
-  { name: "TFS", icon: "/skills/tfs.png" },
-  { name: "BitBucket", icon: "/skills/bit.png" },
   { name: "Play Store", icon: "/skills/playstore.jpg" },
   { name: "App Store", icon: "/skills/appstore.png" }
 ];

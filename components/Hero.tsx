@@ -4,11 +4,12 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaChevronDown } from 'react-icons/fa';
 import { personalInfo } from '@/data/portfolio-data';
+import Image from 'next/image';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
   const [currentRole, setCurrentRole] = useState(0);
-  
+
   const roles = [
     'Full Stack Developer',
     'Mobile App Engineer',
@@ -20,7 +21,7 @@ const Hero = () => {
   useEffect(() => {
     let charIndex = 0;
     const currentText = roles[currentRole];
-    
+
     const typeInterval = setInterval(() => {
       if (charIndex <= currentText.length) {
         setTypedText(currentText.substring(0, charIndex));
@@ -195,7 +196,7 @@ const Hero = () => {
                   borderStyle: 'dashed',
                 }}
               />
-              
+
               {/* Inner rotating element */}
               <motion.div
                 animate={{
@@ -222,9 +223,14 @@ const Hero = () => {
                   }}
                   className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-600 to-accent overflow-hidden shadow-2xl"
                 >
-                  {/* Add your profile image here */}
-                  <div className="w-full h-full flex items-center justify-center text-6xl font-bold text-white">
-                    MH
+                  <div className="w-full h-full relative">
+                    <Image
+                      src="/images/portfolio-image3.png"
+                      alt={personalInfo.name}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
                   </div>
                 </motion.div>
               </div>

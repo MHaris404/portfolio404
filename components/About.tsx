@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { personalInfo } from '@/data/portfolio-data';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import Image from 'next/image';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -37,8 +38,13 @@ const About = () => {
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary-500/30 rounded-2xl"></div>
                 <div className="relative rounded-2xl overflow-hidden glass-morphism p-2">
-                  <div className="w-full h-96 bg-gradient-to-br from-primary-600 to-accent rounded-xl flex items-center justify-center text-8xl font-bold text-white">
-                    MH
+                  <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-2xl">
+                    <Image
+                      src="/images/portfolio-image4.png"
+                      alt={personalInfo.name}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
                 {/* Floating badge */}
@@ -61,18 +67,23 @@ const About = () => {
             >
               <h3 className="text-3xl font-bold">I&apos;m {personalInfo.name}</h3>
               <p className="text-xl text-primary-500 font-semibold">{personalInfo.title}</p>
-              
-              {personalInfo.bio.map((paragraph, index) => (
+
+              <div className="space-y-4 text-gray-400 leading-relaxed">
                 <motion.p
-                  key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 0.6 + (index * 0.1) }}
-                  className="text-gray-400 leading-relaxed"
+                  transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                  {paragraph}
+                  I&apos;m a Senior Software Engineer based in Riyadh, KSA, with full legal right to work. With over five years of experience, I specialize in building robust, scalable mobile and web applications using Kotlin, React Native, and AWS, where I focus on integrating complex backend systems and ensuring high-quality delivery across CI/CD pipelines.
                 </motion.p>
-              ))}
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                >
+                  I&apos;ve delivered engineering excellence across healthcare, digital strategy, and e-commerce platforms — working with global teams from Australia to the British Virgin Islands. I work deeply within Agile/Scrum environments, leveraging DevOps practices and AI tools like Claude AI, Llama, and Qwen to accelerate development, improve code coverage, and deliver premium user experiences.
+                </motion.p>
+              </div>
 
               {/* Info Cards */}
               <div className="grid grid-cols-1 gap-4 pt-6">
@@ -86,8 +97,8 @@ const About = () => {
                     <FaEnvelope className="text-primary-500 text-xl" />
                     <div>
                       <p className="text-sm text-gray-500">Email</p>
-                      <p className="text-white font-medium">{personalInfo.email}</p>
-                      <p className="text-gray-400 text-sm">{personalInfo.alternateEmail}</p>
+                      <p className="text-white font-medium text-sm sm:text-base">{personalInfo.email}</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">{personalInfo.alternateEmail}</p>
                     </div>
                   </div>
                 </motion.div>
