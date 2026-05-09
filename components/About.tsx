@@ -74,7 +74,7 @@ const About = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                  I&apos;m a Senior Software Engineer based in Riyadh, KSA, with full legal right to work. With over five years of experience, I specialize in building robust, scalable mobile and web applications using Kotlin, React Native, and AWS, where I focus on integrating complex backend systems and ensuring high-quality delivery across CI/CD pipelines.
+                  I&apos;m a Senior Software Engineer based in Riyadh, KSA, with full legal right to work. With over five years of experience, I specialize in building robust, scalable mobile and web applications using Java, Kotlin, React Native, React, Nodejs and Nestjs, and AWS, where I focus on integrating complex backend systems and ensuring high-quality delivery across CI/CD pipelines.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
