@@ -5,8 +5,10 @@ import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaChevronDown } from 'react-icons/fa';
 import { personalInfo } from '@/data/portfolio-data';
 import Image from 'next/image';
+import { useResume } from '@/hooks/useResume';
 
 const Hero = () => {
+  const { resumeUrl } = useResume();
   const [typedText, setTypedText] = useState('');
   const [currentRole, setCurrentRole] = useState(0);
 
@@ -163,8 +165,7 @@ const Hero = () => {
                 <FaChevronDown className="group-hover:animate-bounce" />
               </a>
               <a
-                href="#"
-                //href={personalInfo.resumeLink}
+                href={resumeUrl || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 rounded-full border-2 border-primary-500 text-primary-500 font-semibold hover:bg-primary-500 hover:text-white transition-all duration-300"

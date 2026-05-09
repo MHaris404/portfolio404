@@ -5,8 +5,10 @@ import { useInView } from 'react-intersection-observer';
 import { personalInfo } from '@/data/portfolio-data';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
+import { useResume } from '@/hooks/useResume';
 
 const About = () => {
+  const { resumeUrl } = useResume();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -127,7 +129,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 1.1 }}
               >
                 <a
-                  href={personalInfo.resumeLink}
+                  href={resumeUrl || personalInfo.resumeLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary inline-block"
