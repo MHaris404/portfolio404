@@ -163,7 +163,8 @@ const Hero = () => {
                 <FaChevronDown className="group-hover:animate-bounce" />
               </a>
               <a
-                href={personalInfo.resumeLink}
+                href="#"
+                //href={personalInfo.resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 rounded-full border-2 border-primary-500 text-primary-500 font-semibold hover:bg-primary-500 hover:text-white transition-all duration-300"

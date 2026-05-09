@@ -50,8 +50,8 @@ const Skills = () => {
               <motion.div
                 key={index}
                 variants={item}
-                whileHover={{ 
-                  scale: 1.05, 
+                whileHover={{
+                  scale: 1.05,
                   rotate: [0, -2, 2, 0],
                   transition: { duration: 0.3 }
                 }}
@@ -90,9 +90,9 @@ const Skills = () => {
           >
             {[
               { number: '5+', label: 'Years Experience' },
-              { number: '45+', label: 'Technologies' },
-              { number: '50+', label: 'Projects Completed' },
-              { number: '100%', label: 'Client Satisfaction' },
+              { number: '6+', label: 'Technologies' },
+              { number: '11+', label: 'Projects Completed' },
+              { number: '95%', label: 'Client Satisfaction' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <motion.h3
