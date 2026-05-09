@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import BusinessValue from '@/components/BusinessValue';
 import Skills from '@/components/Skills';
+import KnowledgeGraph from '@/components/KnowledgeGraph';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Projects from '@/components/Projects';
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <BusinessValue />
       <Skills />
+      <KnowledgeGraph />
       <Experience />
       <Education />
       <Projects />
