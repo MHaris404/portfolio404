@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaChevronDown } from 're
 import { personalInfo } from '@/data/portfolio-data';
 import Image from 'next/image';
 import { useResume } from '@/hooks/useResume';
+import ParticleBackground from '@/components/ParticleBackground';
 
 const Hero = () => {
   const { resumeUrl } = useResume();
@@ -51,11 +52,15 @@ const Hero = () => {
       {/* Animated Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-background to-surface"></div>
-        {/* Floating orbs */}
+
+        {/* anime.js particle field */}
+        <ParticleBackground />
+
+        {/* Framer Motion ambient orbs */}
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
+            opacity: [0.25, 0.45, 0.25],
           }}
           transition={{
             duration: 8,
@@ -67,7 +72,7 @@ const Hero = () => {
         <motion.div
           animate={{
             scale: [1, 1.3, 1],
-            opacity: [0.3, 0.6, 0.3],
+            opacity: [0.25, 0.5, 0.25],
           }}
           transition={{
             duration: 10,
