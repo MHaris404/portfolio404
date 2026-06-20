@@ -93,6 +93,12 @@ export const testimonials = [
 
 export const education = [
   {
+    degree: "5-Day AI Agents Intensive (Agentic Engineering & Vibe Coding)",
+    institution: "Google & Kaggle",
+    year: "June 2026",
+    image: "/images/kaggle.jpg"
+  },
+  {
     degree: "AWS Solution Architect Associate",
     institution: "Amazon Web Services",
     year: "March 2025",
@@ -162,6 +168,7 @@ export const experience = [
 ];
 
 export const skills = [
+  { name: "Agentic Engineering", icon: "https://img.icons8.com/color/48/000000/bot.png" },
   { name: "Java", icon: "/skills/java.png" },
   { name: "Kotlin", icon: "/skills/kotlin.png" },
   { name: "React Native", icon: "/skills/reactnative.png" },

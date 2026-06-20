@@ -102,6 +102,11 @@ const TAG_COLOR: Record<string, string> = {
   html:            'bg-orange-500/10 text-orange-400 border-orange-500/30',
   css:             'bg-blue-500/10 text-blue-400 border-blue-500/30',
   js:              'bg-yellow-500/10 text-yellow-400 border-yellow-500/30',
+  vapi:            'bg-indigo-600/10 text-indigo-400 border-indigo-600/30',
+  mediapipe:       'bg-red-500/10 text-red-400 border-red-500/30',
+  realm:           'bg-purple-600/10 text-purple-400 border-purple-600/30',
+  websocket:       'bg-sky-500/10 text-sky-400 border-sky-500/30',
+  zustand:         'bg-amber-600/10 text-amber-400 border-amber-600/30',
 };
 
 const tagClass = (tag: string) =>

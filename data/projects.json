@@ -1,5 +1,52 @@
 [
   {
+    "name": "EasyApply",
+    "desc": "A productivity-focused React Native mobile application designed for high-volume templated email outreach. Features a fully local, 100% data-sovereign architecture utilizing Google MediaPipe Tasks GenAI to run local LLM inference (Gemma 2B) on-device (CoreML/GPU accelerated) for smart job description parsing. Includes a native iOS Share Extension / Android ShareActivity, local Realm DB storage, Gmail and Outlook OAuth 2.0 integrations, and a gamified CRM kanban board.",
+    "image": "easyapply",
+    "image_format": "png",
+    "category": "mobile_reactnative",
+    "SubCategory": "frontend_only_mobileapp_hybrid",
+    "tags": [
+      "react-native",
+      "typescript",
+      "android",
+      "ios",
+      "hybrid",
+      "mobile",
+      "mediapipe",
+      "realm",
+      "zustand",
+      "oauth",
+      "firebase"
+    ],
+    "links": {
+      "code": "https://github.com/MHaris404/easyapply"
+    }
+  },
+  {
+    "name": "Vapi Voice Assistant",
+    "desc": "A full-stack conversational AI platform featuring low-latency voice agents. Integrates an interactive web interface with a backend webhook/API processor to handle real-time audio streams, conversational state synchronization, dynamic tool-calling, and custom assistant configuration.",
+    "image": "vapi",
+    "image_format": "png",
+    "category": "web",
+    "SubCategory": "fullstack_web",
+    "tags": [
+      "react",
+      "nextjs",
+      "nodejs",
+      "express",
+      "vapi",
+      "ai",
+      "websocket",
+      "typescript",
+      "tailwind"
+    ],
+    "links": {
+      "view": "https://vapi-frontend-beta.vercel.app/",
+      "code": "Code can't be viewed."
+    }
+  },
+  {
     "name": "Qyser Medical Portal",
     "desc": "MERN stack based medical portal with separate frontend landing and secure dashboard system. Includes patient management, workflows, and role-based access. <br> Landing: https://qyser-landing1.vercel.app/ <br> Dashboard: https://dashboard-dev.qyser.xyz/",
     "image": "qyser",

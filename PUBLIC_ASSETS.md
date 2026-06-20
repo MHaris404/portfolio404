@@ -8,50 +8,37 @@ public/
 ├── og-image.png
 ├── apple-touch-icon.png
 ├── site.webmanifest
-├── images/
-│   ├── aws.jpg
-│   ├── college.jpg
-│   ├── icap.jpg
-│   └── school.jpg
-├── skills/
-│   ├── java.png
-│   ├── kotlin.png
-│   ├── reactnative.png
-│   ├── awssaa.png
-│   ├── azure.png
-│   ├── node.png
-│   ├── xml.jpg
-│   ├── compose.png
-│   ├── csharp.png
-│   ├── react.png
-│   ├── reactjs.png
-│   ├── xamarin.jpg
-│   ├── flutter.jpg
-│   ├── dot-net-core.png
-│   ├── docker.png
-│   ├── telerik.png
-│   ├── antd.png
-│   ├── nativebase.jpg
-│   ├── paper.jpg
-│   ├── material.png
-│   ├── mssql.png
-│   ├── sqlite.png
-│   ├── redux.png
-│   ├── zustand.png
-│   ├── async.png
-│   ├── mmkv.png
-│   ├── bloc.png
-│   ├── room.png
-│   ├── datastore.png
-│   ├── supabase.png
-│   ├── aspwebapi.jpg
-│   ├── tfs.png
-│   ├── bit.png
-│   ├── playstore.jpg
-│   └── appstore.png
-└── projects/
-    └── portfolio.png
+└── images/
+    ├── aws.jpg
+    ├── college.jpg
+    ├── icap.jpg
+    ├── school.jpg
+    ├── skills/
+    │   ├── java.png
+    │   ├── kotlin.png
+    │   ├── reactnative.png
+    │   ├── awssaa.png
+    │   ├── azure.png
+    │   ├── node.png
+    │   └── ...
+    └── projects/
+        ├── easyapply.png
+        ├── vapi.png
+        ├── caaryfintech.png
+        ├── frog.png
+        ├── hprime.png
+        ├── lambkinz.png
+        ├── mern_docker.webp
+        ├── morinaga.png
+        ├── n8n.png
+        ├── qyser.png
+        ├── safekay.png
+        ├── squicle.png
+        ├── ytm3.png
+        ├── zdigit.png
+        └── zorex.png
 ```
+
 
 ## Asset Requirements
 
