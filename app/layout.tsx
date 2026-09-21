@@ -89,8 +89,8 @@ export default function RootLayout({
               email: "mharis.ksasen@gmail.com",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Riyadh",
-                addressCountry: "SA"
+                addressLocality: "Karachi",
+                addressCountry: "PK"
               },
               alumniOf: {
                 "@type": "EducationalOrganization",
